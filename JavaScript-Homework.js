@@ -31,8 +31,8 @@ and replaces it with the string "even index" */
 
 function replaceEvens(arr){
     for (i = 0; i < arr.length; i++) {
-        if (arr[i] % 2 == 0) {
-            arr.splice(i, i, 'even index')
+        if (i % 2 == 1) {
+            arr.splice(i, 1, 'even index')
         };
     };
     return arr
